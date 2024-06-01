@@ -1,0 +1,21 @@
+.contact-secction {
+    text-align: center;
+    padding: 250px;
+}
+
+.contact-secction a {
+    color: chartreuse;
+}
+
+@media screen and (max-width:1000px) {
+    .contact-secction {
+        padding: 250px 100px;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    .contact-secction {
+        padding: 250px 50px;
+    }  
+}

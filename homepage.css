@@ -1,0 +1,126 @@
+.social{
+    position: fixed;
+    top:35%;
+    right: 0;
+    background-color:rgb(250,100,175);
+    width: 50px;
+    padding: 10px 0;
+    border-radius: 25px 0 0 25px;
+}
+
+.social img {
+    width: 100%;
+}
+
+@media (max-width:600px) {
+    .social {
+        display: none;
+    }
+}
+
+.headshot {
+    width: 335px;
+    border-radius: 50%;
+    height: 320px;
+    padding: 40px;
+    margin-left :40vh;
+}
+
+.main-section {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+.introduction {
+    width: 40vw;
+    padding: 30px;
+    border-left: 4px solid rgb(255,255,255);
+}
+
+@media screen and (max-width:1000px) {
+    .main-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .introduction {
+        width: 90vw;
+        border-left: none;
+        text-align: center;
+    }
+    .headshot {
+        margin-left: 0;
+    }
+}
+
+.arrow {
+    border: solid rgb(255,255,255);
+    border-width: 0 8px 8px 0;
+    padding: 15px;
+    display: inline-block;
+    transform: rotate(45deg);
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+    padding: 50px 0 0 50px ;
+}
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.work-section {
+    background-color: rgb(59,62,77);
+    padding: 80px 50px;
+}
+
+.work-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.work-card {
+    width: 25%;
+    background-color: rgb(29,31,38);
+    margin: 10px;
+    padding: 0 50px 50px 50px;
+}
+
+@media screen and (max-width:1000px){
+    .work-card {
+        width: 100%;
+    }
+    .bounce {
+        padding: 50px 0 0 0;
+    }
+}
+
+.html {
+    border-top: solid 8px rgb(242,128,87);
+}
+
+.css {
+    border-top: solid 8px rgb(88,130,203);
+}
+
+.js {
+    border-top: solid 8px rgb(3,114,114);
+}
+
+.react {
+    border-top: solid 8px rgb(239,255,66);
+}
+
